@@ -16,7 +16,7 @@ const schema = `
       resourceURI: String
       urls: [Url]
       #  A resource list of comics in which this character appears.
-      comics: Resource
+      comics: [Comic]
       #  A resource list of series in which this character appears.
       series: Resource
       #  A resource list of stories in which this character appears.
@@ -30,6 +30,10 @@ const schema = `
   type Thumbnail {
       path: String
       extension: String
+  }
+
+  type Comic {
+      name: String
   }
 
   type Resource {

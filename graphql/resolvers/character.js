@@ -6,6 +6,9 @@ const resolveFunctions = {
     thumbnail({ thumbnail: { path, extension } }) {
       return `${path}.${extension}`;
     },
+    comics(parent) {
+      return parent.comics.items;
+    },
   },
 };
 
