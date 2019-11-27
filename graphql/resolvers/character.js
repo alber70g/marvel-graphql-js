@@ -9,9 +9,6 @@ const resolveFunctions = {
     comics(parent) {
       return parent.comics.items;
     },
-    favorite(parent, _, context) {
-      return context.favorites.isFavorite(parent.id);
-    },
   },
 };
 
