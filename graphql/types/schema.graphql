@@ -9,15 +9,9 @@ type Character {
   name: String
   description: String
   modified: String
-  thumbnail: Thumbnail
   resourceURI: String
   #  A resource list of comics in which this character appears.
   comics: [Comic]
-}
-
-type Thumbnail {
-  path: String
-  extension: String
 }
 
 type Comic {
