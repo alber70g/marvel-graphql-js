@@ -1,3 +1,4 @@
 type Mutation {
-  setFavorite(id: Int): Character
+  setFavorite(id: Int!): Character
+  unFavorite(id: Int!): Character
 }

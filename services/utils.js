@@ -30,11 +30,6 @@ export const marvelFetch = (res, queryParams = '') => {
 export const querystring = (params) =>
   '&' +
   Object.keys(params)
-    .map((key) => {
-      console.log({ [key]: params[key] });
-      const res = params[key] ? key + '=' + params[key] : null;
-      console.log({ q: res });
-      return res;
-    })
+    .map((key) => (params[key] ? key + '=' + params[key] : null))
     .filter((x) => !!x)
     .join('&');

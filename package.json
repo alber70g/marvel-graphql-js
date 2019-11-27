@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Seed project for easily creating modular graphql server",
   "scripts": {
-    "start": "nodemon ./server.js --exec babel-node",
+    "start": "nodemon ./server.js --exec babel-node -e graphql,js",
     "build": "babel . -d dist --presets es2015,stage-2 --ignore spec.js,node_modules",
     "serve": "node dist/server.js",
     "start_babel": "babel-node ./server.js --preset=babel-preset-es2015",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tomyitav/graphql-server-seed.git"
+    "url": "git+https://github.com/alber70g/marvel-graphql-js.git"
   },
   "keywords": [
     "Node.js",
@@ -22,7 +22,7 @@
     "Express",
     "Apollo"
   ],
-  "author": "Tom Yitav <tomyitav@gmail.com>",
+  "author": "Albert Groothedde <albertgroothedde@gmail.com>",
   "dependencies": {
     "body-parser": "^1.15.2",
     "core-js": "^2.5.1",
@@ -59,21 +59,5 @@
     "eslint-plugin-import": "^2.0.1",
     "eslint-plugin-react": "^6.4.1",
     "nodemon": "^1.9.1"
-  },
-  "eslintConfig": {
-    "parser": "babel-eslint",
-    "extends": [
-      "airbnb/base",
-      "plugin:import/errors"
-    ],
-    "rules": {
-      "no-use-before-define": 0,
-      "arrow-body-style": 0,
-      "dot-notation": 0,
-      "no-console": 0
-    },
-    "env": {
-      "mocha": true
-    }
   }
 }

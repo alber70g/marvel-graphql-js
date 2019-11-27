@@ -168,10 +168,26 @@ file called `mutations.js`.
 hero as a favorite. Use this method to implement the resolver for
 the mutation.
 
-## 8. Retrieve if a Hero is a favorite
+## 8. **Advanced:** Retrieve if a Hero is a favorite
 
 To use this Favorite service, we can add a property
 `favorite: Boolean` to the Character type.
 
 **Assignment:** Add favorite to Character, and retrieve it using
 a resolver
+
+## 9. **Advanced:** Make a hero non-favorite
+
+**Assignment:** Make a _schema_, _resolver_ and _service_ change
+that allows the client to un-favorite a hero.
+
+## 10. **Very advanced:** Make a subscription
+
+Subscriptions are used to notify a client of a change. Take a
+look at
+[the example code here](https://github.com/tomyitav/graphql-server-seed/blob/master/graphql/resolvers/cars.js#L67).
+
+Browse the repo to get a good overview of what needs to be done.
+
+**Assignment:** Make a subscription that fires whenever a Hero is
+favorited or un-favorited.

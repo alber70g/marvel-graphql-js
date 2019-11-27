@@ -24,6 +24,7 @@ type Character {
   events: Resource
   # A more detailed list of comic series in which this character appears.
   seriesList: [Serie]
+  favorite: Boolean
 }
 
 type Thumbnail {
