@@ -1,9 +1,10 @@
 import md5 from 'md5';
-import fetch from 'fetch-with-proxy';
-import dotenv from 'dotenv';
+// import fetch from 'fetch-with-proxy';
+import fetch from "isomorphic-fetch";
 import { logger } from '../core/logger/app-logger';
-
+import dotenv from 'dotenv';
 dotenv.config();
+
 const API = 'https://gateway.marvel.com:443/v1/public/';
 
 const key = process.env.MARVEL_KEY;

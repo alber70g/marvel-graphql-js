@@ -1,3 +1,5 @@
+import dotenv from 'dotenv';
+dotenv.config();
 import express from 'express';
 import {
   graphqlExpress,
@@ -12,10 +14,8 @@ import { subscriptionManager } from './graphql/subscriptions/subscriptions';
 import schema from './graphql/schema/schema';
 import { logger } from './core/logger/app-logger';
 import config from './core/config/config.dev';
-import dotenv from 'dotenv';
 import { MarvelService } from './services/marvel';
 import { FavoritesService } from './services/favorites';
-dotenv.config();
 const GRAPHQL_PORT = config.serverPort;
 const WS_PORT = config.serverWsPort;
 
