@@ -14,6 +14,7 @@ import { logger } from './core/logger/app-logger';
 import config from './core/config/config.dev';
 import dotenv from 'dotenv';
 import { MarvelService } from './services/marvel';
+import { FavoritesService } from './services/favorites';
 dotenv.config();
 const GRAPHQL_PORT = config.serverPort;
 const WS_PORT = config.serverWsPort;
@@ -28,6 +29,7 @@ graphQLServer.use(
     schema,
     context: {
       marvel: new MarvelService(),
+      favorites: new FavoritesService(),
     },
   })
 );
