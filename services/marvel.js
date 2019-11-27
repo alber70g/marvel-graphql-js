@@ -14,7 +14,7 @@ const getHash = () => {
   return `&ts=${ts}&hash=${md5(ts + pkey + key)}`;
 };
 
-export const marvelFetch = (res, queryParams = '') => {
+const marvelFetch = (res, queryParams = '') => {
   const url = `${API}${res}?apikey=${key}${getHash()}${queryParams}`;
   logger.info(`calling Marvel ${url}`);
   return fetch(url)

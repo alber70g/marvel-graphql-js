@@ -12,7 +12,7 @@ const schema = `
       name: String
       description: String @uppercase
       modified: String
-      thumbnail: Thumbnail
+      thumbnail: String
       resourceURI: String
       urls: [Url]
       #  A resource list of comics in which this character appears.
