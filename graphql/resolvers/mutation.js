@@ -7,10 +7,6 @@ const resolveFunctions = {
       context.favorites.setFavorite(id);
       return context.marvel.getCharacter(id);
     },
-    unFavorite(_, { id }, context) {
-      context.favorites.deleteFavorite(id);
-      return context.marvel.getCharacter(id);
-    },
   },
 };
 

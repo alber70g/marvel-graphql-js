@@ -10,11 +10,4 @@ export class FavoritesService {
       favorites.push(id);
     }
   }
-
-  deleteFavorite(id) {
-    const index = favorites.indexOf(id);
-    if (index > -1) {
-      favorites.splice(index, 1);
-    }
-  }
 }
