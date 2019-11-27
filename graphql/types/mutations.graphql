@@ -1,3 +1,0 @@
-type Mutation {
-  setFavorite(id: Int!): Character
-}
