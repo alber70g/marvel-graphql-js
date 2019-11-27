@@ -3,7 +3,7 @@ const schema = `
 
   type Query {
       hello: String!
-      characters(limit: Int!): [Character]
+      characters(limit: Int = 10, offset: Int): [Character]
       character(id: Int!): Character
     }
 
