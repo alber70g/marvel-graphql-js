@@ -10,12 +10,12 @@ npm install
 
 ## Starting the server
 
+> Notice: the server will crash because you have to do assignment
+> 2 first
+
 ```
 npm start
 ```
-
-The server will run on port 8080. The server will restart
-automatically when you change code.
 
 # Workshop
 
@@ -59,6 +59,15 @@ const resolveFunctions = {
   },
 };
 ```
+
+Now start your GraphQL API
+
+```
+npm start
+```
+
+> The server will run on port localhost:8080. The server will
+> restart automatically when you change code.
 
 **Assignment:** Run a query in
 [http://localhost:8080/graphiql](http://localhost:8080/graphiql)
